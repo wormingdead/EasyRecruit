@@ -37,7 +37,7 @@ public class Wormingdead_EasyRecruitingMod_WishHandler
   {
     Player.RequirePart<XRL.World.Parts.Wormingdead_EasyRecruitingMod_PlayerPart>();
 
-    Popup.Show("Easy Recruiting {{Y|enabled}}. Remember to disable the mod before unloading it to restore base game save compatibility.")
+    Popup.Show("Easy Recruiting {{Y|enabled}}. Remember to disable the mod before unloading it to restore base game save compatibility.");
 
   }
 
