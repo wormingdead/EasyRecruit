@@ -23,14 +23,15 @@ It should work with new games or save games.
     EasyRecruiting disable
     ```
     You can then unload the mod from the mod list.
-    - Alternatively, you can omit the qualifier to toggle the mod, like so:
-        ```
-        EasyRecruiting
-        ```
+
+- Alternatively, you can omit the qualifier to toggle the mod, like so:
+    ```
+    EasyRecruiting
+    ```
 
 ### **Important**
 
-You **MUST** disable the mod by wish if you want to restore base game save compatibility.
+You **MUST** disable the mod by wish before unloading it if you want to restore base game save compatibility.
 
 <br>
 
