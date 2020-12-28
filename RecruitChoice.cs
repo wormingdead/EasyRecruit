@@ -8,7 +8,7 @@ using XRL.UI;
 using XRL.World;
 
 
-public class Wormingdead_EasyRecruitingMod_RecruitChoice : XRL.World.ConversationChoice
+public class Wormingdead_EasyRecruiting_RecruitChoice : XRL.World.ConversationChoice
 {
   public GameObject Player => XRLCore.Core.Game.Player.Body;
 

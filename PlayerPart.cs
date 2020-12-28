@@ -10,11 +10,11 @@ using XRL.UI;
 namespace XRL.World.Parts
 {
   [Serializable]
-  public class Wormingdead_EasyRecruitingMod_PlayerPart : IPart
+  public class Wormingdead_EasyRecruiting_PlayerPart : IPart
   {
-    public Wormingdead_EasyRecruitingMod_PlayerPart()
+    public Wormingdead_EasyRecruiting_PlayerPart()
     {
-      this.Name = "Wormingdead_EasyRecruitingMod_PlayerPart";
+      this.Name = "Wormingdead_EasyRecruiting_PlayerPart";
     }
 
     public override bool AllowStaticRegistration() => true;
@@ -48,7 +48,7 @@ namespace XRL.World.Parts
       if (!conversationNode.bCloseable)
         return;
 
-      var choice = new Wormingdead_EasyRecruitingMod_RecruitChoice();
+      var choice = new Wormingdead_EasyRecruiting_RecruitChoice();
       choice.Ordinal = 1111;
 
       conversationNode.Choices.Add(choice);
