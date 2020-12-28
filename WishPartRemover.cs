@@ -12,7 +12,7 @@ public class Wormingdead_EasyRecruitingMod_Wish
 {
   public GameObject Player => XRLCore.Core.Game.Player.Body;
 
-  [XRL.Wish.WishCommand(Command = "EasyRecruitingCleanUp")]
+  [XRL.Wish.WishCommand(Command = "EasyRecruitingCleanup")]
   public void Wormingdead_EasyRecruitingMod_WishAction()
   {
     Player.RemovePart<XRL.World.Parts.Wormingdead_EasyRecruitingMod_PlayerPart>();
