@@ -14,7 +14,7 @@ public class Wormingdead_EasyRecruitingMod_RecruitChoice : XRL.World.Conversatio
 
   public override XRL.World.ConversationNode Goto(XRL.World.GameObject speaker, bool peekOnly = false)
   {
-    Text = "{{O|Easy Recruiting:}} Please follow me.";
+    Text = "{{O|Easy Recruiting:}} Let us travel together.";
     GotoID = "End";
 
     return base.Goto(speaker, peekOnly);
