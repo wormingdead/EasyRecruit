@@ -1,0 +1,10 @@
+﻿{
+  "id": "Wormingdead_EasyRecruiting",
+  "title": "Easy Recruiting",
+  "loadorder": 1,
+  "description": "Allows the player to recruit almost anyone.\n\n{{R|WARNING}}: You must use the wish \"EasyRecruitingCleanUp\" before unloading the mod to retain base game compatibility.",
+  "tags": "NPC",
+  "version": "0.7.0",
+  "author": "wormingdead",
+  "previewImage": "preview.png"
+}
