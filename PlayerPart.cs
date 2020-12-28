@@ -48,7 +48,11 @@ namespace XRL.World.Parts
       if (!conversationNode.bCloseable)
         return;
 
-      conversationNode.Choices.Add(new Wormingdead_EasyRecruitingMod_RecruitChoice());
+      var choice = new Wormingdead_EasyRecruitingMod_RecruitChoice();
+      choice.Ordinal = 1111;
+
+      conversationNode.Choices.Add(choice);
+      conversationNode.SortEndChoicesToEnd();
     }
   }
 }
