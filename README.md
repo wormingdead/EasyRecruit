@@ -37,7 +37,7 @@ You **MUST** disable the mod by wish before unloading it if you want to restore 
 
  ## Steam Workshop
 
- Pending
+ You can also install the mod from the [Steam Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=2339760271).
 
 <br>
 
