@@ -1,8 +1,8 @@
 ﻿{
-  "id": "Wormingdead_EasyRecruiting",
-  "title": "Easy Recruiting",
+  "id": "Wormingdead_EasyRecruit",
+  "title": "Easy Recruit",
   "loadorder": 1,
-  "description": "Allows the player to recruit almost anyone, by implementing the wish \"EasyRecruiting [enable|disable]\"\n\n{{R|WARNING}}: You must use the wish \"EasyRecruiting disable\" before unloading the mod to restore base game save compatibility.",
+  "description": "Allows the player to recruit almost anyone, by implementing the wish \"EasyRecruit [enable|disable]\"\n\n{{R|WARNING}}: You must use the wish \"EasyRecruit disable\" before unloading the mod to restore base game save compatibility.",
   "tags": "NPC",
   "version": "0.7.0",
   "author": "wormingdead",

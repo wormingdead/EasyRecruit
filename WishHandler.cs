@@ -8,26 +8,26 @@ using XRL.UI;
 using XRL.World;
 
 
-public class Wormingdead_EasyRecruiting_WishHandler
+public class Wormingdead_EasyRecruit_WishHandler
 {
   public GameObject Player => XRLCore.Core.Game.Player.Body;
 
-  [XRL.Wish.WishCommand(Command = "EasyRecruiting")]
+  [XRL.Wish.WishCommand(Command = "EasyRecruit")]
   public void WishToggle()
   {
-    if (Player.HasPart("Wormingdead_EasyRecruiting_PlayerPart"))
+    if (Player.HasPart("Wormingdead_EasyRecruit_PlayerPart"))
       DisableMod();
     else
       EnableMod();
   }
 
-  [XRL.Wish.WishCommand(Command = "EasyRecruiting", Regex = @"(enable)|(up)|(true)|(yes)|(on)")]
+  [XRL.Wish.WishCommand(Command = "EasyRecruit", Regex = @"(enable)|(up)|(true)|(yes)|(on)")]
   public void WishEnable()
   {
     EnableMod();
   }
 
-  [XRL.Wish.WishCommand(Command = "EasyRecruiting", Regex = @"(disable)|(down)|(false)|(no)|(off)")]
+  [XRL.Wish.WishCommand(Command = "EasyRecruit", Regex = @"(disable)|(down)|(false)|(no)|(off)")]
   public void WishDisable()
   {
     DisableMod();
@@ -35,16 +35,16 @@ public class Wormingdead_EasyRecruiting_WishHandler
 
   public void EnableMod()
   {
-    Player.RequirePart<XRL.World.Parts.Wormingdead_EasyRecruiting_PlayerPart>();
+    Player.RequirePart<XRL.World.Parts.Wormingdead_EasyRecruit_PlayerPart>();
 
-    Popup.Show("Easy Recruiting {{Y|enabled}}. Remember to disable the mod before unloading it to restore base game save compatibility.");
+    Popup.Show("Easy Recruit {{Y|enabled}}. Remember to disable the mod before unloading it to restore base game save compatibility.");
 
   }
 
   public void DisableMod()
   {
-    Player.RemovePart<XRL.World.Parts.Wormingdead_EasyRecruiting_PlayerPart>();
+    Player.RemovePart<XRL.World.Parts.Wormingdead_EasyRecruit_PlayerPart>();
 
-    Popup.Show("Easy Recruiting {{Y|disabled}}. It is now safe to unload the Easy Recruiting Mod.");
+    Popup.Show("Easy Recruit {{Y|disabled}}. It is now safe to unload the Easy Recruit Mod.");
   }
 }

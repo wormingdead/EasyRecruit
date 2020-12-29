@@ -8,13 +8,13 @@ using XRL.UI;
 using XRL.World;
 
 
-public class Wormingdead_EasyRecruiting_RecruitChoice : XRL.World.ConversationChoice
+public class Wormingdead_EasyRecruit_RecruitChoice : XRL.World.ConversationChoice
 {
   public GameObject Player => XRLCore.Core.Game.Player.Body;
 
   public override XRL.World.ConversationNode Goto(XRL.World.GameObject speaker, bool peekOnly = false)
   {
-    Text = "{{O|Easy Recruiting:}} Let us travel together.";
+    Text = "{{O|Easy Recruit:}} Let us travel together.";
     GotoID = "End";
 
     return base.Goto(speaker, peekOnly);
