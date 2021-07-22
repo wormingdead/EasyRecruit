@@ -1,5 +1,5 @@
 # Easy Recruit
- Mod for the game [Caves of Qud](http://www.cavesofqud.com/). Allows the player to recruit almost anyone.
+ Mod for the game [Caves of Qud](http://www.cavesofqud.com). Allows the player to recruit almost anyone.
 
 It should work with new games or save games.
 
@@ -35,9 +35,9 @@ You **MUST** disable the mod by wish before unloading it if you want to restore 
 
 <br>
 
- ## Steam Workshop
+## Steam Workshop
 
- You can also install the mod from the [Steam Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=2339760271).
+You can also install the mod from the [Steam Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=2339760271).
 
 <br>
 
