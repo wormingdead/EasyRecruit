@@ -14,7 +14,7 @@ namespace XRL.World.Parts
   {
     public Wormingdead_EasyRecruit_PlayerPart()
     {
-      this.Name = "Wormingdead_EasyRecruit_PlayerPart";
+      //this.Name = "Wormingdead_EasyRecruit_PlayerPart";
     }
 
     public override bool AllowStaticRegistration() => true;
