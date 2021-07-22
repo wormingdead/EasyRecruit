@@ -1,6 +1,8 @@
 # Easy Recruit
- Mod for the game [Caves of Qud](http://www.cavesofqud.com). Allows the player to recruit almost anyone.
-
+Mod for the game [Caves of Qud](http://www.cavesofqud.com). Allows the player to recruit almost anyone, by implementing the wish:
+```
+EasyRecruit [enable|disable]
+```
 It should work with new games or save games.
 
 <br>
