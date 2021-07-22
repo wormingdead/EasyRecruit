@@ -20,8 +20,9 @@ public class Wormingdead_EasyRecruit_RecruitChoice : XRL.World.ConversationChoic
     return base.Goto(speaker, peekOnly);
   }
 
-  public override bool Visit(XRL.World.GameObject speaker, XRL.World.GameObject player, out bool terminateConversation)
+  public override bool Visit(XRL.World.GameObject speaker, XRL.World.GameObject player, out bool removeChoice, out bool terminateConversation)
   {
+    removeChoice = false;
     terminateConversation = true;
 
     XRL.World.Parts.Brain pBrain = speaker.pBrain;
@@ -32,6 +33,6 @@ public class Wormingdead_EasyRecruit_RecruitChoice : XRL.World.ConversationChoic
 
     XRL.UI.Popup.Show(speaker.DisplayName + speaker.GetVerb("join") + " you!");
 
-    return base.Visit(speaker, player, out terminateConversation);
+    return base.Visit(speaker, player, out removeChoice, out terminateConversation);
   }
 }
