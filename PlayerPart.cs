@@ -20,39 +20,32 @@ namespace XRL.World.Parts
     public override bool AllowStaticRegistration() => true;
     public GameObject Player => XRLCore.Core.Game.Player.Body;
 
-    public override void Register(XRL.World.GameObject obj)
-    {
-      obj.RegisterPartEvent((IPart)this, "PlayerBeginConversation");
+    public override bool WantEvent(int ID, int cascade)
+    => base.WantEvent(ID, cascade) || ID == BeginConversationEvent.ID;
 
-      base.Register(obj);
-    }
+    public override bool HandleEvent(BeginConversationEvent E) {
+      XRL.World.GameObject speaker = E.Actor;
+      XRL.World.GameObject listener = E.SpeakingWith;
 
-    public override bool FireEvent(XRL.World.Event E)
-    {
-      if (E.ID == "PlayerBeginConversation")
-        this.HandleBeginConversation(E);
-
-      return base.FireEvent(E);
-    }
-
-    public void HandleBeginConversation(XRL.World.Event E)
-    {
-      XRL.World.GameObject speaker = E.GetGameObjectParameter("Speaker");
       if (speaker == null
-      || this.ParentObject.DistanceTo(speaker) > 1
-      || speaker.pBrain.PartyLeader == Player
-      || speaker.GetBlueprint().GetxTag("WaterRitual", "NoJoin") == "true")
-        return;
+      || !speaker.IsPlayer()
+      || listener == null
+      || this.ParentObject.DistanceTo(listener) > 1
+      || listener.pBrain.PartyLeader == Player
+      || listener.GetBlueprint().GetxTag("WaterRitual", "NoJoin") == "true")
+        return true;
 
-      ConversationNode conversationNode = (E.GetParameter("Conversation") as Conversation).NodesByID["Start"];
+      ConversationNode conversationNode = E.Conversation.NodesByID["Start"];
       if (!conversationNode.bCloseable)
-        return;
+        return true;
 
       var choice = new Wormingdead_EasyRecruit_RecruitChoice();
       choice.Ordinal = 1111;
 
       conversationNode.Choices.Add(choice);
       conversationNode.SortEndChoicesToEnd();
+
+      return true;
     }
   }
 }
