@@ -8,6 +8,7 @@ using XRL.UI;
 using XRL.World;
 
 
+[XRL.Wish.HasWishCommand]
 public class Wormingdead_EasyRecruit_WishHandler
 {
   public GameObject Player => XRLCore.Core.Game.Player.Body;
