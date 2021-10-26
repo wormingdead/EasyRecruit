@@ -12,12 +12,12 @@ public class Wormingdead_EasyRecruit_RecruitChoice : XRL.World.ConversationChoic
 {
   public GameObject Player => XRLCore.Core.Game.Player.Body;
 
-  public override XRL.World.ConversationNode Goto(XRL.World.GameObject speaker, bool peekOnly = false)
+  public override XRL.World.ConversationNode Goto(XRL.World.GameObject speaker, bool peekOnly = false, XRL.World.Conversation conversation = null)
   {
     Text = "{{O|Easy Recruit:}} Let us travel together.";
     GotoID = "End";
 
-    return base.Goto(speaker, peekOnly);
+    return base.Goto(speaker, peekOnly, conversation);
   }
 
   public override bool Visit(XRL.World.GameObject speaker, XRL.World.GameObject player, out bool removeChoice, out bool terminateConversation)
