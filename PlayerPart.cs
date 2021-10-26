@@ -43,7 +43,7 @@ namespace XRL.World.Parts
       choice.Ordinal = 1111;
 
       conversationNode.Choices.Add(choice);
-      conversationNode.SortEndChoicesToEnd();
+      conversationNode.Choices.Sort();
 
       return true;
     }
