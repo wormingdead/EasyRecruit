@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<conversations Namespace="Mods.Wormingdead.EasyRecruit">
+
+  <conversation ID="BaseConversation">
+    <choice ID="WormingdeadEasyRecruitChoice" Target="End" IfHaveState="WormingdeadEasyRecruitActive" IfNotLedBy="Player" IfNotSpeakerHavexTagWormingdeadEasyRecruit="WaterRitual,NoJoin" RecruitWormingdeadEasyRecruit="">
+      <text>{{O|Easy Recruit:}} Let us travel together.</text>
+    </choice>
+  </conversation>
+
+</conversations>
