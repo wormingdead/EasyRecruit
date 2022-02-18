@@ -16,7 +16,7 @@ namespace Mods.Wormingdead.EasyRecruit
   [HasConversationDelegate] // This is required on the surrounding class to reduce the search complexity.
   public static class DelegateContainer
   {
-    // A predicate that receives a DelegateContext object with our values assigned, this to protect mods from signature breaks.
+    // A predicate that receives a DelegateContext object with our values assigned, this is to protect mods from signature breaks.
     [ConversationDelegate(Speaker = true)]
     public static bool IfHavexTagWormingdeadEasyRecruit(DelegateContext Context)
     {

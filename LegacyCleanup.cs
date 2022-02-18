@@ -1,6 +1,6 @@
-using XRL; // for HasCallAfterGameLoadedAttribute and CallAfterGameLoadedAttribute
-using XRL.Core; // for XRLCore
-using XRL.World; // for GameObject
+using XRL;
+using XRL.Core;
+using XRL.World;
 using XRL.World.Parts;
 
 
