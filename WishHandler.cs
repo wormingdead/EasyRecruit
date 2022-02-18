@@ -1,22 +1,19 @@
-using System;
-using System.Collections.Generic;
-using System.Text;
 using XRL;
 using XRL.Core;
-using XRL.Language;
-using XRL.Rules;
 using XRL.UI;
+using XRL.Wish;
 using XRL.World;
+
 
 namespace Mods.Wormingdead.EasyRecruit
 {
-  [XRL.Wish.HasWishCommand]
+  [HasWishCommand]
   public class Wormingdead_EasyRecruit_WishHandler
   {
     public GameObject Player => XRLCore.Core.Game.Player.Body;
     private string globalName = "WormingdeadEasyRecruitActive";
 
-    [XRL.Wish.WishCommand(Command = "EasyRecruit")]
+    [WishCommand(Command = "EasyRecruit")]
     public void WishToggle()
     {
       if (The.Game.GetBooleanGameState(globalName))
@@ -25,17 +22,17 @@ namespace Mods.Wormingdead.EasyRecruit
         EnableMod();
     }
 
-    [XRL.Wish.WishCommand(Command = "EasyRecruit", Regex = @"(enable)|(up)|(true)|(yes)|(on)")]
     public void WishEnable()
     {
       EnableMod();
     }
+    [WishCommand(Command = "EasyRecruit", Regex = @"(enable)|(up)|(true)|(yes)|(on)")]
 
-    [XRL.Wish.WishCommand(Command = "EasyRecruit", Regex = @"(disable)|(down)|(false)|(no)|(off)")]
     public void WishDisable()
     {
       DisableMod();
     }
+    [WishCommand(Command = "EasyRecruit", Regex = @"(disable)|(down)|(false)|(no)|(off)")]
 
     public void EnableMod()
     {

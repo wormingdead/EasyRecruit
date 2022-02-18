@@ -1,15 +1,9 @@
-using System;
-using System.Collections.Generic;
-using System.Text;
 using XRL;
-using XRL.Core;
-using XRL.Language;
-using XRL.Rules;
 using XRL.UI;
-using XRL.World;
 using XRL.World.Conversations;
 using XRL.World.Effects;
 using XRL.World.Parts;
+
 
 namespace Mods.Wormingdead.EasyRecruit
 {
