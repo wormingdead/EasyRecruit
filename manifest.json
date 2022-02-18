@@ -2,7 +2,7 @@
   "id": "Wormingdead_EasyRecruit",
   "title": "Easy Recruit",
   "loadorder": 1,
-  "description": "Allows the player to recruit almost anyone, by implementing the wish:\n\n{{Y|EasyRecruit}} {{K|[enable}}{{K||}}{{K|disable]}}\n\n{{R|WARNING}}: You must disable the mod by wish before unloading it to restore base game save compatibility.",
+  "description": "Allows the player to recruit almost anyone, by implementing the wish:\n\n{{Y|EasyRecruit}} {{K|[enable}}{{K||}}{{K|disable]}}\n\nThe mod can be uninstalled at any time.",
   "tags": "NPC",
   "version": "0.9.0",
   "author": "wormingdead",

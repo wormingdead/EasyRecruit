@@ -20,20 +20,19 @@ It should work with new games or save games.
     ```
     to enable the mod. You will now have the option to recruit NPCs when conversing with them.
     - Wishing can be enabled in the game's options menu.
-5. When you want to deactive or remove the mod, use the wish:
+5. When you want to deactive the mod, use the wish:
     ```
     EasyRecruit disable
     ```
-    You can then unload the mod from the mod list.
 
 - Alternatively, you can omit the qualifier to toggle the mod, like so:
     ```
     EasyRecruit
     ```
 
-### **Important**
+### **Note**
 
-You **MUST** disable the mod by wish before unloading it if you want to restore base game save compatibility.
+The mod can be uninstalled at any time.
 
 <br>
 
