@@ -4,7 +4,7 @@
   "loadorder": 1,
   "description": "Allows the player to recruit almost anyone, by implementing the wish:\n\n{{Y|EasyRecruit}} {{K|[enable}}{{K||}}{{K|disable]}}\n\nThe mod can be uninstalled at any time.",
   "tags": "NPC",
-  "version": "0.9.0",
+  "version": "0.10.0",
   "author": "wormingdead",
   "previewImage": "preview.png"
 }
