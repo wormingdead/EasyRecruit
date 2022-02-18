@@ -39,20 +39,13 @@ namespace Mods.Wormingdead.EasyRecruit
 
     public void EnableMod()
     {
-      // Remove any remaining EasyRecruit PlayerPart from EasyRecruit v0.9.x
-      Player.RemovePart<XRL.World.Parts.Wormingdead_EasyRecruit_PlayerPart>();
-
       The.Game.SetBooleanGameState(globalName, true);
 
       Popup.Show("Easy Recruit {{Y|enabled}}.");
-
     }
 
     public void DisableMod()
     {
-      // Remove any remaining EasyRecruit PlayerPart from EasyRecruit v0.9.x
-      Player.RemovePart<XRL.World.Parts.Wormingdead_EasyRecruit_PlayerPart>();
-
       The.Game.RemoveBooleanGameState(globalName);
 
       Popup.Show("Easy Recruit {{Y|disabled}}.");
