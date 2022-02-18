@@ -30,6 +30,7 @@ namespace Mods.Wormingdead.EasyRecruit
     [ConversationDelegate]
     public static void RecruitWormingdeadEasyRecruit(DelegateContext Context)
     {
+      // Copied from WaterRitualJoinParty.cs
       Brain pBrain = The.Speaker.pBrain;
       pBrain.BecomeCompanionOf(The.Player);
       if (pBrain.GetFeeling(The.Player) < 0)
