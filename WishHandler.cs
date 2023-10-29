@@ -17,9 +17,9 @@ namespace Mods.Wormingdead.EasyRecruit
     public static bool WishToggle()
     {
       if (The.Game.GetBooleanGameState(globalName))
-        DisableMod();
+      { DisableMod(); }
       else
-        EnableMod();
+      { EnableMod(); }
 
       return true;
     }
