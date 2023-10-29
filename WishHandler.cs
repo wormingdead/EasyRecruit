@@ -11,31 +11,43 @@ namespace Mods.Wormingdead.EasyRecruit
   public class Wormingdead_EasyRecruit_WishHandler
   {
     public GameObject Player => XRLCore.Core.Game.Player.Body;
-    private string globalName = "WormingdeadEasyRecruitActive";
+    private static string globalName = "WormingdeadEasyRecruitActive";
 
     [WishCommand(Command = "EasyRecruit")]
-    public void WishToggle()
+    public static bool WishToggle()
     {
       if (The.Game.GetBooleanGameState(globalName))
         DisableMod();
       else
         EnableMod();
+
+      return true;
     }
 
-    public void WishEnable() => EnableMod();
     [WishCommand(Regex = @"EasyRecruit(:| )((enable)|(up)|(true)|(yes)|(on)|(1))")]
+    public static bool WishEnable()
+    {
+      EnableMod();
 
-    public void WishDisable() => DisableMod();
+      return true;
+    }
+
     [WishCommand(Regex = @"EasyRecruit(:| )((disable)|(down)|(false)|(no)|(off)|(0))")]
+    public static bool WishDisable()
+    {
+      DisableMod();
 
-    public void EnableMod()
+      return true;
+    }
+
+    public static void EnableMod()
     {
       The.Game.SetBooleanGameState(globalName, true);
 
       Popup.Show("Easy Recruit {{Y|enabled}}.");
     }
 
-    public void DisableMod()
+    public static void DisableMod()
     {
       The.Game.RemoveBooleanGameState(globalName);
 
