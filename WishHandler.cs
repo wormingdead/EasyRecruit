@@ -22,11 +22,11 @@ namespace Mods.Wormingdead.EasyRecruit
         EnableMod();
     }
 
-    [WishCommand(Command = "EasyRecruit", Regex = @"(enable)|(up)|(true)|(yes)|(on)")]
     public void WishEnable() => EnableMod();
+    [WishCommand(Regex = @"EasyRecruit(:| )((enable)|(up)|(true)|(yes)|(on)|(1))")]
 
-    [WishCommand(Command = "EasyRecruit", Regex = @"(disable)|(down)|(false)|(no)|(off)")]
     public void WishDisable() => DisableMod();
+    [WishCommand(Regex = @"EasyRecruit(:| )((disable)|(down)|(false)|(no)|(off)|(0))")]
 
     public void EnableMod()
     {
