@@ -1,16 +1,14 @@
 # Easy Recruit
 
-## Potentially Redundant
-
-This mod provides similar functionality to the wish, `beguile`. See https://wiki.cavesofqud.com/wiki/Wishes for more information.
-
-## Description
-
 Mod for the game [Caves of Qud](http://www.cavesofqud.com). Allows the player to recruit almost anyone, by implementing the wish:
 ```
 EasyRecruit [enable|disable]
 ```
 It should work with new games or save games.
+
+## Potentially Redundant
+
+This mod provides similar functionality to the wish, `beguile`. See https://wiki.cavesofqud.com/wiki/Wishes for more information.
 
 <br>
 
